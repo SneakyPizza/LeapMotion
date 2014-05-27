@@ -1,12 +1,10 @@
 ﻿<Properties>
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Scripts\Leap\LeapController.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Scripts\Leap\LeapMovement.cs">
     <Files>
-      <File FileName="Assets\Scripts\Leap\LeapController.cs" Line="27" Column="7" />
-      <File FileName="Assets\Scripts\Leap\LeapMovement.cs" Line="21" Column="34" />
-      <File FileName="Assets\Scripts\Leap\LeapController.cs" Line="27" Column="7" />
+      <File FileName="Assets\Scripts\Leap\LeapMovement.cs" Line="21" Column="4" />
+      <File FileName="Assets\Scripts\Leap\LeapController.cs" Line="35" Column="1" />
       <File FileName="Assets\LeapMotion\Leap_Boilerplate\scripts_for_example_scenes\HandController.cs" Line="10" Column="2" />
-      <File FileName="Assets\LeapMotion\Leap_Boilerplate\scripts\LeapManager.cs" Line="57" Column="63" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>

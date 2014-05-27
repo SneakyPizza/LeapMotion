@@ -4,11 +4,6 @@ using Leap;
 
 public class LeapMovement : MonoBehaviour 
 {
-	//public GameObject[] colliders;
-	
-	//private LeapManager leapManager;
-
-
 	private LeapController leapController;
 	
 	void Start () 
