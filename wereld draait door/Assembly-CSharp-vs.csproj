@@ -55,7 +55,6 @@
      <Compile Include="Assets\Leap_Boilerplate\scripts_for_example_scenes\ScreenMover.cs" />
      <Compile Include="Assets\Leap_Boilerplate\scripts_for_example_scenes\WorldMover.cs" />
      <Compile Include="Assets\Scripts\CameraMove.cs" />
-     <Compile Include="Assets\Scripts\Leap\HandControl.cs" />
      <Compile Include="Assets\Scripts\Leap\LeapController.cs" />
      <Compile Include="Assets\Scripts\Leap\LeapMovement.cs" />
      <Compile Include="Assets\Scripts\MainMenu.cs" />

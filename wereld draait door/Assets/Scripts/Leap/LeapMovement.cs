@@ -24,5 +24,9 @@ public class LeapMovement : MonoBehaviour
 				gameObject.renderer.enabled = true; 
 			}
 		}
+		else ()
+		{
+
+		}
 	}
 }
