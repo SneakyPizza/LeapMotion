@@ -2,22 +2,17 @@
 using System.Collections;
 using Leap;
 
-public class PlayerMove : MonoBehaviour {
-
-	public PlayerRotate playerRotate;
-	public float playerMoveSpeed;
-	public Vector3 playerDir;
-
+public class PlayerMove : MonoBehaviour 
+{
+	public Vector3 mouseInput;
+	public Vector3 currentPosition;
+	public float mouseSpeed;
+	
 	void Update()
 	{
-		transform.rotation = playerRotate.playerRotation;
-	}
-
-	void FixedUpdate ()
-	{
-			playerDir *= Time.deltaTime;
-
-			// the bigger the player, speed up
-			//rigidbody.AddForce ( * playerMoveSpeed);
+		mouseInput = new Vector3(0,0,-Input.GetAxis("Mouse X"));
+		currentPosition += mouseInput;
+		transform.position += currentPosition / mouseSpeed;
+		Debug.Log (currentPosition);
 	}
 }

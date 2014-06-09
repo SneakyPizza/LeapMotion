@@ -1,8 +1,9 @@
 ﻿<Properties>
 <<<<<<< HEAD
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="MonoDevelop.Default" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Scripts\Leap\LeapMovement.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Scripts\Player\PlayerMove.cs">
     <Files>
+<<<<<<< HEAD
       <File FileName="Assets\LeapMotion\Leap_Boilerplate\scripts_for_example_scenes\ScreenMover.cs" Line="8" Column="1" />
       <File FileName="Assets\Scripts\Leap\LeapMovement.cs" Line="1" Column="1" />
       <File FileName="Assets\Scripts\Leap\LeapController.cs" Line="1" Column="1" />
@@ -14,6 +15,11 @@
       <File FileName="Assets\Scripts\Player\PlayerMove.cs" Line="16" Column="45" />
       <File FileName="Assets\Scripts\Player\PlayerRotate.cs" Line="1" Column="1" />
 >>>>>>> origin/master
+=======
+      <File FileName="Assets\Scripts\Player\PlayerMove.cs" Line="17" Column="3" />
+      <File FileName="Assets\Scripts\Leap\Movement.cs" Line="12" Column="26" />
+      <File FileName="Assets\Scripts\Menu\Menu.cs" Line="39" Column="23" />
+>>>>>>> 16d464d5e27372c8678e9e1ce22452f15e5db232
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
