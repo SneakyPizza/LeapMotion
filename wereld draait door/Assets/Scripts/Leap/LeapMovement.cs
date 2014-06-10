@@ -18,7 +18,7 @@ public class LeapMovement : MonoBehaviour
 	
 	void Update () 
 	{
-		Hand primeHand = leapController.frontmostHand();
+ 		Hand primeHand = leapController.frontmostHand();
 		
 		if(primeHand.IsValid)
 		{

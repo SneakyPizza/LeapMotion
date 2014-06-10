@@ -49,7 +49,7 @@ public class MainMenu : MonoBehaviour
 	public float button4Y;
 
 	void Update(){
-	//	playX *= Screen.width;
+		playX *= Screen.width;
 
 	}
 

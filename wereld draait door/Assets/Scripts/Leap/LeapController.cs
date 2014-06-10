@@ -42,14 +42,14 @@ public class LeapController : MonoBehaviour
 		{
 			_mainCam = (GameObject.FindGameObjectWithTag("MainCamera") as GameObject).GetComponent(typeof(Camera)) as Camera;
 		}
-		Debug.Log(_mainCam);
+		//Debug.Log(_mainCam);
 	}
 
 	void Update () 
 	{
 		_currentFrame = _leapController.Frame();
 		
-		Hand primeHand = frontmostHand();
+		//Hand primeHand = frontmostHand();
 	}
 
 	public Hand frontmostHand()
