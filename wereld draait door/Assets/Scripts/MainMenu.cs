@@ -48,18 +48,12 @@ public class MainMenu : MonoBehaviour
 	public float button4X;
 	public float button4Y;
 
-	void Update(){
-		playX *= Screen.width;
-
-	}
-
 	void OnGUI()
 	{
 		if(GUI.Button(new Rect(playX, playY, buttonWidth, buttonHeight),playName))
 		{
 			Application.LoadLevel("Level1");
 		}
-	//	mainTexture.pixelInset = new Rect (0,0,Screen.width,Screen.height);
 		if(scoreButton){
 			if(GUI.Button(new Rect(scoreX, scoreY, buttonWidth, buttonHeight),scoreName))
 			{
