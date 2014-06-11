@@ -4,10 +4,15 @@ using System.Collections;
 public class Hitpoints : MonoBehaviour 
 {
 	public int hitpoints;
-	public int damage;
+
 	
 	void OnCollisionEnter(Collision col)
 	{
+		if(col.gameObject.name == "Fire")
+		{
+
+		}
+
 		if(col.gameObject.tag == "Wall")
 		{
 			hitpoints -= 10;
