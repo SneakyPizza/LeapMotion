@@ -9,6 +9,8 @@ public class LeapMovement : MonoBehaviour
 	//private LeapManager leapManager;
 
 
+	public GameObject Player;
+
 	private LeapController leapController;
 	
 	void Start () 
@@ -18,12 +20,13 @@ public class LeapMovement : MonoBehaviour
 	
 	void Update () 
 	{
-		Hand primeHand = leapController.frontmostHand();
+ 		Hand primeHand = leapController.frontmostHand();
 		
+
 		if(primeHand.IsValid)
 		{
 			gameObject.transform.position = primeHand.PalmPosition.ToUnityTranslated();
-			
+
 			if(gameObject.renderer.enabled != true) 
 			{ 
 				gameObject.renderer.enabled = true; 

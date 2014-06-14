@@ -7,7 +7,7 @@ public class LeapController : MonoBehaviour
 	public Camera _mainCam;
 	
 	private static Controller _leapController = new Controller();
-	private static Frame _currentFrame = Frame.Invalid;
+	static Frame _currentFrame = Frame.Invalid;
 
 	private float _screenToWorldDistance = 10.0f;
 
@@ -42,26 +42,26 @@ public class LeapController : MonoBehaviour
 		{
 			_mainCam = (GameObject.FindGameObjectWithTag("MainCamera") as GameObject).GetComponent(typeof(Camera)) as Camera;
 		}
-		Debug.Log(_mainCam);
+		//Debug.Log(_mainCam);
 	}
 
 	void Update () 
 	{
 		_currentFrame = _leapController.Frame();
 		
-		Hand primeHand = frontmostHand();
+		//Hand primeHand = frontmostHand();
 	}
 
 	public Hand frontmostHand()
 	{
-		float minZ = float.MaxValue;
+		float minY = float.MaxValue;
 		Hand forwardHand = Hand.Invalid;
 		
 		foreach(Hand hand in _currentFrame.Hands)
 		{
-			if(hand.PalmPosition.z < minZ)
+			if(hand.PalmPosition.y < minY)
 			{
-				minZ = hand.PalmPosition.z;
+				minY = hand.PalmPosition.y;
 				forwardHand = hand;
 			}
 		}

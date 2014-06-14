@@ -2,31 +2,30 @@ using UnityEngine;
 using System.Collections;
 using Leap;
 
-public class PlayerMove : MonoBehaviour {
+public class PlayerMove : MonoBehaviour 
+{
+	private Vector3 mouseInput;
+	private Vector3 currentPosition;
+	private float mouseSpeed = 50f;
 
-	public Vector3 mouseInput;
-	public Vector3 currentPosition;
-	public float mouseSpeed;
+	private float timer = 0.5f;
+
+	public GameObject Player;
+
 
 	void Update()
 	{
-
-		mouseInput = new Vector3(0,0,-Input.GetAxis("Mouse X"));
+		mouseInput = new Vector3(-Input.GetAxis("Mouse X"),0,0);
 		currentPosition += mouseInput;
 		transform.position += currentPosition / mouseSpeed;
-		Debug.Log (currentPosition);
-		//transform.Translate.y = new Vector3(Input.GetAxis("Mouse X"), Input.GetAxisRaw("Mouse Y"), 0); 
-	}
 
-	void FixedUpdate ()
-	{
-		if (Input.GetKey(KeyCode.A)) {
-			rigidbody.AddForce(0,0,20*Time.deltaTime);
-			Debug.Log("a");
-		}		
+		timer -= Time.deltaTime;
 
-			
-			// the bigger the player, speed up
-			//rigidbody.AddForce ( * playerMoveSpeed);
+		if(timer <= 0)
+		{
+			Player.rigidbody.AddForce(Vector3.forward * 50);
+			Debug.Log("sanicSpeedUp");
+			timer += 0.5f;
+		}
 	}
 }
